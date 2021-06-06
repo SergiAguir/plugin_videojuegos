@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <record id="video_model_form_inherit" model="ir.ui.view">
+      <field name="name"> Plugin de videojuegos</field>
+      <field name="model">videojuegos.juego_model</field>
+      <field name="inherit_id" ref="videojuegos.listado_juego_form"/>
+      <field name="arch" type="xml">
+        <field name="prestado" position="before">
+          <field name="pegi" />
+        </field>
+      </field>
+    </record>
+
+    <record id="video_model_tree_inherit" model="ir.ui.view">
+      <field name="name"> Plugin de videojuegos</field>
+      <field name="model">videojuegos.juego_model</field>
+      <field name="inherit_id" ref="videojuegos.listado_juego_tree"/>
+      <field name="arch" type="xml">
+        <field name="prestado" position="after">
+          <field name="pegi" />
+        </field>
+      </field>
+    </record>
+
+  </data>
+</odoo>

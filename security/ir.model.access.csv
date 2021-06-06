@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_plugin_video_video_model,plugin_video.video_model,model_plugin_video_video_model,,1,1,1,1
